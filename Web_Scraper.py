@@ -11,8 +11,6 @@ database = 'breitbart.db'
 
 url = 'http://www.breitbart.com'
 
-
-
 words_ = ["Obama", "Trump", "ISIS", "hoax", "media", "guns", "russia", "Putin", 'extremist', "God"]
 
 conn = sqlite3.connect(database)
@@ -119,16 +117,3 @@ dynamic_data_entry(main_func)
 
 c.close()
 conn.close()
-# per each request, parse the page with all five words
-
-
-# Begin to implement SQL.
-# store word count in database based on date
-# create record for every day, and columns per word
-# update the database daily
-# have the script run daily without me having to run it
-# run every day
-
-
-
-
